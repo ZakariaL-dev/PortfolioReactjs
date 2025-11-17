@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zakaria Lardjane - Graphic Designer & Front-end Developer</title>
+    <link
+      rel="shortcut icon"
+      href="./src/pics/Avatarnobg.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <!--  -->
+    <script src="finisher-header.es5.min.js"></script>
+    <script type="text/javascript">
+      new FinisherHeader({
+        count: 6,
+        size: {
+          min: 697,
+          max: 1300,
+          pulse: 0,
+        },
+        speed: {
+          x: {
+            min: 0.1,
+            max: 0.3,
+          },
+          y: {
+            min: 0.1,
+            max: 0.3,
+          },
+        },
+        colors: {
+          background: "#577d86",
+          particles: ["#569daa", "#87cbb9", "#b9eddd"],
+        },
+        blending: "overlay",
+        opacity: {
+          center: 1,
+          edge: 0.1,
+        },
+        skew: 0,
+        shapes: ["c"],
+      });
+    </script>
+  </body>
+</html>
