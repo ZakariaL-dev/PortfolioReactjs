@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 
 const FinisherBackground = () => {
-
   const config = {
     // ... (your existing config)
     count: 6,
@@ -45,7 +44,7 @@ const FinisherBackground = () => {
       } else {
         console.error("FinisherHeader still not found after timeout.");
       }
-    }, 500); // Increased delay to 500ms
+    }, 5000); // Increased delay to 500ms
 
     return () => clearTimeout(timer);
   }, []);
