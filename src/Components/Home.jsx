@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom/cjs/react-router-dom";
 import FinisherBackground from "../animatedBG/FinisherBackground";
-import { FaFileDownload } from "react-icons/fa";
+// import { FaFileDownload } from "react-icons/fa";
 
 const Home = () => {
   return (
@@ -23,12 +23,12 @@ const Home = () => {
           Creative med student crafting brands through code & design.
         </p>
         <div className="flex justify-center items-center gap-4 flex-wrap">
-          <button className="slidebtn my-6 bg-[#11694f] text-slate-100 py-3 px-6 rounded-xl cursor-pointer font-bold">
-            <Link to="/projects"> View My Work</Link>
+          <button className="bg-[#87CBB9] py-3 px-5 rounded-xl cursor-pointer font-bold text-[#11694f] flex items-center gap-1.5 btnhvr border-2 border-[#11694f] hover:text-teal-100 hover:border-teal-100 hover:-skew-2">
+            {/* <FaFileDownload className="text-lg" /> */}
+            <Link to="/dev"> View Developer Portfolio</Link>
           </button>
-          <button className="slidebtn bg-[#87CBB9] py-3 px-5 rounded-xl cursor-pointer font-bold text-[#11694f] delay-300 flex items-center gap-1.5">
-            <FaFileDownload className="text-lg" />
-            My resume
+          <button className="my-6 border-2 border-[#11694f] text-[#11694f] hover:bg-[#56b89a] hover:skew-2 py-3 px-6 rounded-xl cursor-pointer font-bold btnhvr">
+            <Link to="/graphic">View Design Portfolio</Link>
           </button>
         </div>
       </div>

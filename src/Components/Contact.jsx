@@ -4,6 +4,8 @@ import { SiGooglemaps } from "react-icons/si";
 import { MdTimer } from "react-icons/md";
 import { IoShareSocial } from "react-icons/io5";
 import { useState } from "react";
+import { Alert, Slide, Snackbar } from "@mui/material";
+import { HiMiniPaperAirplane } from "react-icons/hi2";
 
 const Contact = () => {
   const [Message, setMessage] = useState({
@@ -11,12 +13,101 @@ const Contact = () => {
     email: "",
     projectType: "",
     projectDesc: "",
+    timestamp: new Date().toLocaleString(),
   });
+
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const [Snack, setSnack] = useState({
+    open: false,
+    type: "",
+    message: "",
+  });
+
   async function sendJobInfos(e) {
     e.preventDefault();
+    setIsSubmitting(true);
+
+    // API
+    const CHAT_ID = import.meta.env.VITE_CHAT_ID;
+    const BOT_TOKEN = import.meta.env.VITE_BOT_TOKEN;
+
+    const TELEGRAM_API_URL = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`;
+
+    // check Inputs
+    if (
+      !Message.name ||
+      !Message.email ||
+      !Message.projectType ||
+      !Message.projectDesc
+    ) {
+      setIsSubmitting(false);
+      return setSnack({
+        open: true,
+        type: "error",
+        message: "Please, fill the demanded infos !!!",
+      });
+    }
+    const messageText = `
+      <b>--- 📧 New Portfolio Client Message 📧 ---</b>
+
+      <b>Client Name:</b> ${Message.name}
+      <b>Email:</b> ${Message.email}
+      <b>Project Type:</b> ${Message.projectType}
+
+      <b>Project Details:</b>
+      <pre>${Message.projectDesc}</pre>
+
+      <b>Sent At:</b> ${Message.timestamp}
+    `;
+
+    try {
+      const res = await fetch(TELEGRAM_API_URL, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          chat_id: CHAT_ID,
+          text: messageText,
+          parse_mode: "HTML",
+        }),
+      });
+      const result = await res.json();
+      if (res.ok && result.ok) {
+        setSnack({
+          open: true,
+          type: "success",
+          message: "Message Sent Successfully!",
+        });
+        setMessage({
+          name: "",
+          email: "",
+          projectType: "",
+          projectDesc: "",
+        });
+        setIsSubmitting(false);
+      } else {
+        console.error("Telegram API Error:", result);
+        setSnack({
+          open: true,
+          type: "error",
+          message: "Failed to send message.",
+        });
+        setIsSubmitting(false);
+      }
+    } catch (error) {
+      setSnack({
+        open: true,
+        type: "error",
+        message: "An error occurred while connecting to the server.",
+      });
+      console.error("Fetch Error:", error);
+      setIsSubmitting(false);
+    }
   }
   return (
-    <div className="pt-24 bg-[#B9EDDD]">
+    <div className="pt-24">
       <h1 className="text-slate-50 text-center text-4xl font-bold relative after:content-[''] after:bg-teal-700 after:w-[250px] after:h-[5px] after:absolute after:rounded-[20px] after:mt-[50px] after:left-1/2 after:-translate-x-1/2 ">
         Let's Work Together
       </h1>
@@ -26,6 +117,7 @@ const Contact = () => {
         <form
           id="Client"
           className="bg-slate-50 w-[95%] lg:w-[45%] px-7 pb-4 pt-8 rounded-2xl shadow-[0px_0px_6px_1px_rgba(87,125,134,0.66)]"
+          onSubmit={(e) => sendJobInfos(e)}
         >
           <h3 className="font-bold mb-7 text-teal-900">Send Me a Message</h3>
 
@@ -82,11 +174,17 @@ const Contact = () => {
           <div className="w-full text-center">
             <button
               type="submit"
-              className="bg-[#11694f] my-6 py-3 px-5 rounded-xl cursor-pointer font-bold text-slate-100 w-4/5"
-              onClick={(e) => sendJobInfos(e)}
+              className="bg-[#11694f] my-6 py-3 px-5 rounded-xl cursor-pointer font-bold text-slate-100 w-2/5 btnhvr hover:w-3/5 hover:shadow-xl hover:text-teal-600 hover:bg-[#74ebc7]"
+              disabled={isSubmitting}
             >
-              <i className="fa-solid fa-paper-plane"></i>
-              Send Message
+              {isSubmitting ? (
+                "Sending..."
+              ) : (
+                <span className="flex items-center justify-center gap-5">
+                  Send Message
+                  <HiMiniPaperAirplane className="text-lg" />
+                </span>
+              )}
             </button>
           </div>
         </form>
@@ -98,13 +196,9 @@ const Contact = () => {
             <MdOutlineMailOutline className="contact" />
             <div>
               <h2 className="font-bold text-teal-700">Email</h2>
-              <a
-                href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#122;&#97;&#107;&#97;&#114;&#105;&#97;&#46;&#108;&#97;&#114;&#100;&#106;&#97;&#110;&#101;&#46;&#112;&#114;&#111;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;"
-                className="wrap-break-words hover:text-teal-600"
-                target="_blank"
-              >
+              <p className="wrap-break-words hover:text-teal-600">
                 &#122;&#97;&#107;&#97;&#114;&#105;&#97;&#46;&#108;&#97;&#114;&#100;&#106;&#97;&#110;&#101;&#46;&#112;&#114;&#111;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;
-              </a>
+              </p>
             </div>
           </div>
           {/* <!-- phone number --> */}
@@ -171,6 +265,23 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <Snackbar
+        open={Snack.open}
+        autoHideDuration={4500}
+        onClose={() => setSnack((s) => ({ ...s, open: false }))}
+        anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
+        slots={{ transition: Slide }}
+        slotProps={{ transition: { direction: "up" } }}
+      >
+        <Alert
+          onClose={() => setSnack((s) => ({ ...s, open: false }))}
+          severity={Snack.type}
+          variant="filled"
+          sx={{ width: "100%" }}
+        >
+          {Snack.message}
+        </Alert>
+      </Snackbar>
     </div>
   );
 };

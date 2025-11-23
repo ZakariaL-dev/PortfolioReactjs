@@ -1,10 +1,6 @@
 import React, { useEffect } from "react";
 
 const FinisherBackground = () => {
-  // 1. Create a ref to attach the canvas/target element if the library needs one.
-  // The FinisherHeader library usually targets the 'header finisher-header' element itself
-  // or looks for a specific class/element.
-  // For this case, we'll keep your component render minimal.
 
   const config = {
     // ... (your existing config)
