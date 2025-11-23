@@ -156,7 +156,7 @@ const About = () => {
       {/* content */}
       <div className="pt-14 flex flex-row justify-around items-start flex-wrap lg:px-20">
         {/* My Photo */}
-        <img src="/public/pics/My Character.svg" className="w-80 mb-7" />
+        <img src="/pics/My Character.svg" className="w-80 mb-7" />
         {/* shadow-[0px_0px_6px_1px_rgba(87,125,134,0.7)] */}
         <div className="px-10 lg:w-3/5 text-left">
           <h2 className="font-bold text-2xl mb-4 text-slate-50">

@@ -26,7 +26,7 @@ const NavBar = () => {
         }
       >
         <h1>
-          <img src="/public/pics/Avatarnobg.png" alt="ZL" className="w-12" />
+          <img src="/pics/Avatarnobg.png" alt="ZL" className="w-12" />
         </h1>
         {/*  */}
         <div className="hidden lg:block">
