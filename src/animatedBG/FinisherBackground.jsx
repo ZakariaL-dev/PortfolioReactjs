@@ -44,7 +44,7 @@ const FinisherBackground = () => {
       } else {
         console.error("FinisherHeader still not found after timeout.");
       }
-    }, 500); // Increased delay to 500ms
+    }, 200); // Increased delay to 500ms
 
     return () => clearTimeout(timer);
   }, []);

@@ -15,7 +15,7 @@ const GraphicProjetcs = () => {
   return (
     <div>
       <div className="w-full h-screen bg-[#9de0ce] flex flex-col justify-center items-center relative">
-        <h1 className="text-[#177a5e] text-3xl lg:text-5xl font-bold mb-4">
+        <h1 className="text-[#177a5e] text-3xl lg:text-5xl text-md font-bold mb-4">
           Graphic Designer
         </h1>
         <p className="text-[#55897a] px-[7%] lg:px-[20%] text-lg lg:text-xl text-center">

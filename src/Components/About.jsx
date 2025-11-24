@@ -218,12 +218,12 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center items-center gap-4 flex-wrap py-4">
+      <div className="flex justify-center items-center gap-4 flex-wrap py-8 ">
         <button className="py-3 px-5 rounded-xl cursor-pointer font-bold text-[#11694f] flex items-center gap-1.5 btnhvr border-2 border-[#11694f] hover:-translate-y-1 hover:bg-[#56b89a]">
           {/* <FaFileDownload className="text-lg" /> */}
           <Link to="/dev"> View Developer Portfolio</Link>
         </button>
-        <button className="btnhvr my-6 bg-[#11694f] text-slate-100 py-3 px-6 rounded-xl cursor-pointer font-bold btnhvr hover:text-teal-100 hover:-translate-y-1 ">
+        <button className="btnhvr bg-[#11694f] text-slate-100 py-3 px-6 rounded-xl cursor-pointer font-bold btnhvr hover:text-teal-100 hover:-translate-y-1 ">
           <Link to="/graphic">View Design Portfolio</Link>
         </button>
       </div>

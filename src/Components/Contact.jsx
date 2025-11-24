@@ -108,7 +108,7 @@ const Contact = () => {
   }
   return (
     <div className="pt-24">
-      <h1 className="text-slate-50 text-center text-4xl font-bold relative after:content-[''] after:bg-teal-700 after:w-[250px] after:h-[5px] after:absolute after:rounded-[20px] after:mt-[50px] after:left-1/2 after:-translate-x-1/2 ">
+      <h1 className="text-slate-50 text-center lg:text-4xl text-3xl font-bold relative after:content-[''] after:bg-teal-700 after:w-[250px] after:h-[5px] after:absolute after:rounded-[20px] after:mt-[50px] after:left-1/2 after:-translate-x-1/2 ">
         Let's Work Together
       </h1>
 
@@ -174,7 +174,7 @@ const Contact = () => {
           <div className="w-full text-center">
             <button
               type="submit"
-              className="bg-[#11694f] my-6 py-3 px-5 rounded-xl cursor-pointer font-bold text-slate-100 w-2/5 btnhvr hover:w-3/5 hover:shadow-xl hover:text-teal-600 hover:bg-[#74ebc7]"
+              className="btnhvr bg-[#11694f] my-6 py-3 px-5 rounded-xl cursor-pointer font-bold text-slate-100 lg:w-2/5 hover:w-4/5 lg:hover:w-3/5 hover:shadow-xl hover:text-teal-600 hover:bg-[#74ebc7]"
               disabled={isSubmitting}
             >
               {isSubmitting ? (
@@ -196,7 +196,7 @@ const Contact = () => {
             <MdOutlineMailOutline className="contact" />
             <div>
               <h2 className="font-bold text-teal-700">Email</h2>
-              <p className="wrap-break-words hover:text-teal-600">
+              <p className="text-sm hover:text-teal-600">
                 &#122;&#97;&#107;&#97;&#114;&#105;&#97;&#46;&#108;&#97;&#114;&#100;&#106;&#97;&#110;&#101;&#46;&#112;&#114;&#111;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;
               </p>
             </div>

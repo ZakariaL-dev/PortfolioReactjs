@@ -31,19 +31,20 @@ const NavBar = () => {
         {/*  */}
         <div className="hidden lg:block">
           <ul className="flex justify-center items-center gap-5 text-xl">
-            <Link to="/" className="link">
+            <Link to="/" className="link" onClick={() => setcheckInp(false)}>
               Home
             </Link>
-            <Link to="/about" className="link">
+            <Link
+              to="/about"
+              className="link"
+              onClick={() => setcheckInp(false)}
+            >
               About
             </Link>
             <p
               className="link flex items-center gap-1"
               onClick={() => {
                 setDropProject(!DropProject);
-                setTimeout(() => {
-                  setDropProject(false);
-                }, 3500);
               }}
             >
               Portfolio
@@ -51,7 +52,11 @@ const NavBar = () => {
             </p>
             {/* </Link> */}
 
-            <Link to="/contact" className="link">
+            <Link
+              to="/contact"
+              className="link"
+              onClick={() => setcheckInp(false)}
+            >
               Contact
             </Link>
           </ul>
@@ -67,10 +72,24 @@ const NavBar = () => {
           }
         >
           <div className="flex flex-col p-3">
-            <Link to="/dev" className="link mb-4 w-[7.4rem]">
+            <Link
+              to="/dev"
+              className="link mb-4 w-[7.4rem]"
+              onClick={() => {
+                setcheckInp(false);
+                setDropProject(false);
+              }}
+            >
               Web Developer
             </Link>
-            <Link to="/graphic" className="link w-[7.4rem] ">
+            <Link
+              to="/graphic"
+              className="link w-[7.4rem]"
+              onClick={() => {
+                setcheckInp(false);
+                setDropProject(false);
+              }}
+            >
               Graphic Design
             </Link>
           </div>
@@ -101,24 +120,35 @@ const NavBar = () => {
               : "lg:hidden absolute opacity-0 pointer-events-none"
           }
         >
-          <Link to="/" className="link mb-4 w-[4.3rem] ">
+          <Link
+            to="/"
+            className="link mb-4 w-[4.3rem] "
+            onClick={() => setcheckInp(false)}
+          >
             Home
           </Link>
 
-          <Link to="/about" className="link mb-4 w-[4.4rem]">
+          <Link
+            to="/about"
+            className="link mb-4 w-[4.4rem]"
+            onClick={() => setcheckInp(false)}
+          >
             About
           </Link>
 
           <Link
             to="/projects/dev"
             className="link mb-4 w-32 flex items-center gap-1"
-            onClick={() => setDropProject(true)}
           >
             Portfolio
-            <IoIosArrowDown />
+            {DropProject === true ? <IoIosArrowUp /> : <IoIosArrowDown />}
           </Link>
 
-          <Link to="/contact" className="link mb-4 w-[5.6rem]">
+          <Link
+            to="/contact"
+            className="link mb-4 w-[5.6rem]"
+            onClick={() => setcheckInp(false)}
+          >
             Contact
           </Link>
         </div>

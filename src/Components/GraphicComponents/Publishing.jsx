@@ -52,10 +52,10 @@ const Publishing = () => {
   });
   return (
     <div className="bg-[#77d6bd] pb-8">
-      <h1 className="text-[#177a5e] text-2xl lg:text-4xl font-bold pt-6 text-center mb-5">
+      <h1 className="text-[#177a5e] text-3xl lg:text-4xl font-bold pt-6 text-center mb-5">
         Publishing & Misc.
       </h1>
-      <p className="text-[#55897a] px-[7%] lg:px-[20%] text-lg lg:text-xl text-center">
+      <p className="text-[#0e6147d8] px-[7%] lg:px-[20%] text-lg lg:text-xl text-center">
         Structured, multi-page designs that guide readers through compelling
         narratives.
       </p>

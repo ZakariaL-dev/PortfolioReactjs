@@ -44,7 +44,7 @@ const Services = () => {
     return (
       <div
         key={s.id}
-        className="bg-[#87CBB9] p-6 rounded-xl w-1/3 lg:w-1/5 hover:shadow-xl transition-all duration-500 ease-out hover:-translate-y-3 flex flex-col items-center"
+        className="bg-[#87CBB9] p-6 rounded-xl w-full lg:w-1/5 hover:shadow-xl transition-all duration-500 ease-out hover:-translate-y-3 flex flex-col items-center"
       >
         <div className="text-5xl">{s.icon}</div>
 
@@ -55,10 +55,10 @@ const Services = () => {
   });
   return (
     <div>
-      <h1 className="text-[#177a5e] text-2xl lg:text-4xl font-bold pt-6 text-center mb-5">
+      <h1 className="text-[#177a5e] text-4xl font-bold pt-6 text-center mb-5">
         Services
       </h1>
-      <p className="text-[#55897a] px-[7%] lg:px-[20%] text-lg lg:text-xl text-center">
+      <p className="text-[#55897a] px-[7%] lg:px-[20%] text-md lg:text-xl text-center">
         Let's create something remarkable together
       </p>
       <Container

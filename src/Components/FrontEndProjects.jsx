@@ -266,7 +266,7 @@ const FrontEndProjects = () => {
         <h1 className="text-[#177a5e] text-3xl lg:text-5xl font-bold mb-4">
           Front-End Developer
         </h1>
-        <p className="text-[#55897a] px-[7%] lg:px-[20%] text-lg lg:text-xl text-center">
+        <p className="text-[#55897a] px-[7%] lg:px-[20%] text-md lg:text-xl text-center">
           Front-end developer focused on clean UI, fast interfaces, and
           practical apps. Passionate about creating engaging user experiences
           with modern web technologies.
