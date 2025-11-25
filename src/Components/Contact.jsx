@@ -247,7 +247,7 @@ const Contact = () => {
                   Instagram
                 </a>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/in/zakaria-lardjane-a70208379/"
                   target="_blank"
                   className="mr-3 cursor-pointer transition-all duration-500 ease-in-out hover:text-teal-500"
                 >

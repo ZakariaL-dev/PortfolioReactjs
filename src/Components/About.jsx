@@ -12,6 +12,7 @@ import { FaGithub } from "react-icons/fa";
 import { SiPostman } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 import { FaGitAlt } from "react-icons/fa";
+import { Container } from "@mui/material";
 
 const About = () => {
   // frontend
@@ -160,11 +161,13 @@ const About = () => {
         {/* shadow-[0px_0px_6px_1px_rgba(87,125,134,0.7)] */}
         <div className="px-10 lg:w-3/5 text-left">
           <p className="text-slate-50 mb-3 text-center text-lg">
-            I enjoy building clean interfaces and solving problems with code. I am aiming for{" "}
+            I enjoy building clean interfaces and solving problems with code. I
+            am aiming for{" "}
             <span className="text-lime-800 font-bold">
               Junior Web Developer and Graphic Designer roles
             </span>{" "}
-            , where i can grow while contributing solid UI and responsive components.
+            , where i can grow while contributing solid UI and responsive
+            components.
           </p>
           {/* graphic */}
           <h4 className="font-semibold underline my-5 text-lime-800 text-xl">
@@ -208,13 +211,64 @@ const About = () => {
           </div>
         </div>
       </div>
+      <Container
+        maxWidth="xl"
+        className="flex flex-wrap w-full items-start justify-center text-left gap-8"
+      >
+        {/* Front focus */}
+        <div className="lg:w-[45%] w-full">
+          <h1 className="font-semibold underline my-5 text-lime-800 text-xl">
+            Frontend Focus
+          </h1>
+          <div className="flex flex-wrap flex-3 items-stretch gap-3.5 text-[#118667]">
+            <div className="bg-[#B9EDDD] p-6 rounded-xl sm:max-w-[40%] w-full hover:shadow-xl transition-all duration-500 ease-out hover:-translate-y-1.5">
+              <h3 className="font-bold mb-1.5">Looking for:</h3>
+              <p>Junior Front-End / React roles</p>
+            </div>
+            <div className="bg-[#B9EDDD] p-6 rounded-xl sm:max-w-[40%] w-full hover:shadow-xl transition-all duration-500 ease-out hover:-translate-y-1.5">
+              <h3 className="font-bold mb-1.5">Motivated by:</h3>
+              <p>Clean UI, practical apps, component-based design</p>
+            </div>
+            <div className="bg-[#B9EDDD] p-6 rounded-xl sm:max-w-[40%] w-full hover:shadow-xl transition-all duration-500 ease-out hover:-translate-y-1.5">
+              <h3 className="font-bold mb-1.5">Currently learning:</h3>
+              <p>Authentication, PostgreSQL, Next js</p>
+            </div>
+          </div>
+        </div>
+        {/* Graphic focus */}
+        <div className="lg:w-[45%] w-full">
+          <h1 className="font-semibold underline my-5 text-lime-800 text-xl">
+            Design Focus
+          </h1>
+          <div className="flex flex-wrap flex-3 items-stretch gap-3.5 text-[#118667]">
+            <div className="bg-[#B9EDDD] p-6 rounded-xl sm:max-w-[40%] w-full hover:shadow-xl transition-all duration-500 ease-out hover:-translate-y-1.5">
+              <h3 className="font-bold mb-1.5">Looking for:</h3>
+              <p>Branding, visual identity, social media design projects</p>
+            </div>
+            <div className="bg-[#B9EDDD] p-6 rounded-xl sm:max-w-[40%] w-full hover:shadow-xl transition-all duration-500 ease-out hover:-translate-y-1.5">
+              <h3 className="font-bold mb-1.5">Motivated by:</h3>
+              <p>
+                Strong minimal visuals, clear typography, real-world
+                deliverables
+              </p>
+            </div>
+            <div className="bg-[#B9EDDD] p-6 rounded-xl sm:max-w-[40%] w-full hover:shadow-xl transition-all duration-500 ease-out hover:-translate-y-1.5">
+              <h3 className="font-bold mb-1.5">Currently learning:</h3>
+              <p>
+                Business cards, flyers, invitations, social media layouts,
+                identity systems
+              </p>
+            </div>
+          </div>
+        </div>
+      </Container>
       <div className="flex justify-center items-center gap-4 flex-wrap py-8 ">
         <button className="py-3 px-5 rounded-xl cursor-pointer font-bold text-[#11694f] flex items-center gap-1.5 btnhvr border-2 border-[#11694f] hover:-translate-y-1 hover:bg-[#56b89a]">
           {/* <FaFileDownload className="text-lg" /> */}
-          <Link to="/dev"> View Developer Portfolio</Link>
+          <Link to="/dev">See my developer projects</Link>
         </button>
         <button className="btnhvr bg-[#11694f] text-slate-100 py-3 px-6 rounded-xl cursor-pointer font-bold btnhvr hover:text-teal-100 hover:-translate-y-1 ">
-          <Link to="/graphic">View Design Portfolio</Link>
+          <Link to="/graphic">View my design work</Link>
         </button>
       </div>
     </div>
