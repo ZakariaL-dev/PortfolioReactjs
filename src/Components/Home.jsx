@@ -19,10 +19,10 @@ const Home = () => {
         <div className="flex justify-center items-center gap-4 flex-wrap mt-10">
           <button className="bg-[#87CBB9] py-3 px-5 rounded-xl cursor-pointer font-bold text-[#11694f] flex items-center gap-1.5 btnhvr border-2 border-[#11694f] hover:text-teal-100 hover:border-teal-100 hover:-skew-2">
             {/* <FaFileDownload className="text-lg" /> */}
-            <Link to="/dev"> View Developer Portfolio</Link>
+            <Link to="/dev">See my developer projects</Link>
           </button>
           <button className="border-2 border-[#11694f] text-[#11694f] hover:bg-[#56b89a] hover:skew-2 py-3 px-6 rounded-xl cursor-pointer font-bold btnhvr">
-            <Link to="/graphic">View Design Portfolio</Link>
+            <Link to="/graphic">View my design work</Link>
           </button>
         </div>
       </div>

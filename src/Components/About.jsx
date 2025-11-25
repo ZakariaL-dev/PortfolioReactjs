@@ -159,27 +159,18 @@ const About = () => {
         <img src="/pics/My Character.svg" className="w-80 mb-7" />
         {/* shadow-[0px_0px_6px_1px_rgba(87,125,134,0.7)] */}
         <div className="px-10 lg:w-3/5 text-left">
-          <h2 className="font-bold text-2xl mb-4 text-slate-50">
-            Crafting Digital
-            <span className="text-lime-800"> Experiences </span>
-          </h2>
-          <p className="text-slate-50 mb-3">
-            With a background in both graphic design and computer science, I
-            bring a unique perspective to every project. I believe that great
-            digital experiences are born from the perfect marriage of aesthetics
-            and functionality.
-          </p>
-          <p className="text-slate-50 mb-3">
-            My approach combines user-centered design principles with
-            cutting-edge development practices to create solutions that not only
-            look beautiful but also perform exceptionally well across all
-            devices and platforms.
+          <p className="text-slate-50 mb-3 text-center text-lg">
+            I enjoy building clean interfaces and solving problems with code. I am aiming for{" "}
+            <span className="text-lime-800 font-bold">
+              Junior Web Developer and Graphic Designer roles
+            </span>{" "}
+            , where i can grow while contributing solid UI and responsive components.
           </p>
           {/* graphic */}
           <h4 className="font-semibold underline my-5 text-lime-800 text-xl">
-            Graphic Design & Advertising Printing
+            Graphic Design
           </h4>
-          <div className="flex flex-row flex-wrap justify-start items-center gap-7 mb-5 font-bold text-[#11694f]">
+          <div className="flex flex-row flex-wrap justify-start items-center gap-4 mb-5 font-bold text-[#11694f]">
             {GraphicDisplay}
           </div>
           {/* dev */}
@@ -188,7 +179,6 @@ const About = () => {
           </h4>
           <div>
             {/* specialties */}
-
             <div>
               <div>
                 <h1 className="text-[#11694f] text-lg font-semibold mb-2.5">

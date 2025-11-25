@@ -16,7 +16,7 @@ const NavBar = () => {
     <div
       className={
         checkInp === true
-          ? "w-full z-20 fixed top-0 backdrop-blur-md h-76 lg:h-20"
+          ? "w-full z-20 fixed top-0 backdrop-blur-md h-88 lg:h-20"
           : "w-full z-20 fixed top-0"
       }
     >
@@ -137,11 +137,25 @@ const NavBar = () => {
           </Link>
 
           <Link
-            to="/projects/dev"
-            className="link mb-4 w-32 flex items-center gap-1"
+            to="/dev"
+            className="link w-44 mb-4"
+            onClick={() => {
+              setcheckInp(false);
+              setDropProject(false);
+            }}
           >
-            Portfolio
-            {DropProject === true ? <IoIosArrowUp /> : <IoIosArrowDown />}
+            Web Developer
+          </Link>
+
+          <Link
+            to="/graphic"
+            className="link w-44 mb-4"
+            onClick={() => {
+              setcheckInp(false);
+              setDropProject(false);
+            }}
+          >
+            Graphic Design
           </Link>
 
           <Link
