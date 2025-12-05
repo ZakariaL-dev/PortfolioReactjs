@@ -4,7 +4,7 @@ import Home from "./Components/Home";
 import About from "./Components/About";
 import Contact from "./Components/Contact";
 import FrontEndProjects from "./Components/FrontEndProjects";
-import Reviews from "./Components/Reviews";
+// import Reviews from "./Components/Reviews";
 import Footer from "./Components/Footer";
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
@@ -27,9 +27,9 @@ function App() {
         <Route exact path="/graphic">
           <GraphicProjetcs />
         </Route>
-        <Route exact path="/reviews">
+        {/* <Route exact path="/reviews">
           <Reviews />
-        </Route>
+        </Route> */}
         <Route exact path="/contact">
           <Contact />
         </Route>
