@@ -214,9 +214,18 @@ const FrontEndProjects = () => {
       pic: "/codingscreenshots/TypingSpeedTest.svg",
       title: "Typing Speed Test - React JS",
       desc: "A simple and interactive Typing Speed Test application built entirely using frontend web technologies. The app allows users to measure their typing speed (WPM) and accuracy. It is deployed and hosted through the Netlify platform, providing a fast and efficient serverless setup.",
-      tags: "React, Vite, Tailwind CSS, Material UI, React Icons",
+      tags: "React (Vite), Tailwind CSS, Material UI, React Icons",
       livelink: "https://typedtxttest.netlify.app/",
       githublink: "https://github.com/ZakariaL-dev/Typing-Speed-Test",
+    },
+    {
+      id: 2,
+      pic: "/codingscreenshots/RockPaperScissors.svg",
+      title: "Rock-Paper-Scissors Game - React JS",
+      desc: "Developed a fully functional, classic Rock-Paper-Scissors game to demonstrate proficiency in modern front-end development. The application is built on React for state management and a dynamic, component-based architecture.",
+      tags: "React (Vite), Tailwind CSS, Material UI, React Icons, Moment js",
+      livelink: "https://rockpaperscissorssgames.netlify.app/",
+      githublink: "https://github.com/ZakariaL-dev/Rock-Paper-Scissors-Game",
     },
   ];
   const GameDisplay = Games.map((m) => {
