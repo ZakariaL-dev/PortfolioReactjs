@@ -219,7 +219,7 @@ const FrontEndProjects = () => {
     {
       id: 2,
       pic: "/codingscreenshots/RockPaperScissors.svg",
-      title: "Rock-Paper-Scissors Game - React JS",
+      title: "Rock-Paper-Scissors - React JS",
       tags: "React (Vite), Tailwind CSS, Material UI, React Icons, Moment js",
       livelink: "https://rockpaperscissorssgames.netlify.app/",
       githublink: "https://github.com/ZakariaL-dev/Rock-Paper-Scissors-Game",
