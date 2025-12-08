@@ -30,7 +30,7 @@ const FrontEndProjects = () => {
     },
     {
       id: 3,
-      pic: "/codingscreenshots/PrayerTime-VanillaJS.svg",
+      pic: "/codingscreenshots/PrayerTime.svg",
       title: "Prayer Time - React JS",
       desc: "A simple and accurate prayer time tracker that displays daily timings for major cities worldwide. It shows both Gregorian and Hijri dates, fetches times dynamically, and offers a clean interface for quick daily reference.",
       tags: "React (vite), Axios, date-fns, Tailwind CSS, Material UI, React Icons, AlAdhan API",
