@@ -145,6 +145,14 @@ const FrontEndProjects = () => {
       livelink: "https://livewordcounter.netlify.app/",
       githublink: "https://github.com/ZakariaL-dev/Live-Word-Counter",
     },
+    {
+      id: 4,
+      pic: "/codingscreenshots/QRCodeGenerator-VanillaJS.svg",
+      title: "QR Code Generator - Vanilla JS",
+      tags: "HTML, JavaScript, Tailwind CSS",
+      livelink: "https://qrcode-generatorss.netlify.app/",
+      githublink: "https://github.com/ZakariaL-dev/QrCode-Generator",
+    },
   ];
   const MiniAppDisplay = MiniApps.map((m) => {
     const multitag = m.tags
