@@ -1,3 +1,4 @@
+// MUI Components
 import { Container } from "@mui/material";
 
 const PrintAdvertising = () => {
@@ -65,6 +66,7 @@ const PrintAdvertising = () => {
                 src={c}
                 alt={`Pic: ${c + i} `}
                 className="bg-center rounded-xl lg:max-w-40 lg:max-h-44 max-w-36 max-h-44 shadow-lg"
+                loading="lazy"
               />
             );
           })}

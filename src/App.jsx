@@ -1,14 +1,18 @@
+// Global CSS
 import "./index.css";
+
+// Components
 import NavBar from "./Components/NavBar";
 import Home from "./Components/Home";
 import About from "./Components/About";
 import Contact from "./Components/Contact";
 import FrontEndProjects from "./Components/FrontEndProjects";
-// import Reviews from "./Components/Reviews";
 import Footer from "./Components/Footer";
-
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import GraphicProjetcs from "./Components/GraphicProjetcs";
+// import Reviews from "./Components/Reviews";
+
+// React Router
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
   return (

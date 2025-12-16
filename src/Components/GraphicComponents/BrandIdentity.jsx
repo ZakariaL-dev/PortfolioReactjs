@@ -1,3 +1,4 @@
+//  MUI Components
 import { Container } from "@mui/material";
 
 const BrandIdentity = () => {
@@ -36,6 +37,7 @@ const BrandIdentity = () => {
                 src={l}
                 alt={`Logo ${i + 1}`}
                 className="bg-center rounded-xl w-36 h-36 shadow-lg"
+                loading="lazy"
               />
             );
           })}

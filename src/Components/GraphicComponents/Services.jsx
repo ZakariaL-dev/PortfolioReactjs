@@ -1,10 +1,10 @@
+// React Icons
 import { GrPaint } from "react-icons/gr";
 import { FaPrint } from "react-icons/fa6";
 import { CgSmartphoneChip } from "react-icons/cg";
 import { RiBookShelfFill } from "react-icons/ri";
-import { TbTopologyStar3 } from "react-icons/tb";
 
-
+// MUI Icons
 import { Container } from "@mui/material";
 
 const Services = () => {

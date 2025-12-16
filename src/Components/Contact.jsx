@@ -1,11 +1,16 @@
+// React Icons
 import { MdOutlineMailOutline } from "react-icons/md";
 import { FaPhone } from "react-icons/fa6";
 import { SiGooglemaps } from "react-icons/si";
 import { MdTimer } from "react-icons/md";
 import { IoShareSocial } from "react-icons/io5";
-import { useState } from "react";
-import { Alert, Slide, Snackbar } from "@mui/material";
 import { HiMiniPaperAirplane } from "react-icons/hi2";
+
+// React
+import { useState } from "react";
+
+// MUI Components
+import { Alert, Slide, Snackbar } from "@mui/material";
 
 const Contact = () => {
   const [Message, setMessage] = useState({

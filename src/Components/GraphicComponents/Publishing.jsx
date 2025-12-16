@@ -1,3 +1,4 @@
+// MUI Components
 import { Container } from "@mui/material";
 
 const Publishing = () => {
@@ -43,6 +44,7 @@ const Publishing = () => {
                 src={p}
                 alt={`Pic: ${p + i} `}
                 className="bg-center rounded-xl w-[47%] h-[47%] shadow-lg"
+                loading="lazy"
               />
             );
           })}

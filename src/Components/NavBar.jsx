@@ -1,13 +1,14 @@
+// React
 import { useState } from "react";
 
+// React Icons
 import { FaBars } from "react-icons/fa6";
 import { FaXmark } from "react-icons/fa6";
 import { IoIosArrowDown } from "react-icons/io";
 import { IoIosArrowUp } from "react-icons/io";
 
+// React Router
 import { Link } from "react-router-dom/cjs/react-router-dom";
-
-import "animate.css";
 
 const NavBar = () => {
   const [checkInp, setcheckInp] = useState(false);
@@ -26,7 +27,12 @@ const NavBar = () => {
         }
       >
         <h1>
-          <img src="/pics/Avatarnobg.png" alt="ZL" className="w-12" />
+          <img
+            src="/pics/Avatarnobg.png"
+            alt="ZL"
+            className="w-12"
+            loading="lazy"
+          />
         </h1>
         {/*  */}
         <div className="hidden lg:block">

@@ -1,3 +1,4 @@
+// MUI Components
 import { Container } from "@mui/material";
 
 const Marketing = () => {
@@ -64,6 +65,7 @@ const Marketing = () => {
                 src={p}
                 alt={`Pic: ${p + i} `}
                 className="bg-center rounded-xl lg:max-w-40 lg:max-h-44 max-w-36 max-h-44 shadow-lg"
+                loading="lazy"
               />
             );
           })}

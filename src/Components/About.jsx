@@ -1,5 +1,7 @@
+// React Router
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
+// React Icons
 import { FaHtml5 } from "react-icons/fa6";
 import { FaCss3Alt } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
@@ -157,7 +159,11 @@ const About = () => {
       {/* content */}
       <div className="pt-14 flex flex-row justify-around items-start flex-wrap lg:px-20">
         {/* My Photo */}
-        <img src="/pics/My Character.svg" className="w-80 mb-7" />
+        <img
+          src="/pics/My Character.svg"
+          className="w-80 mb-7"
+          loading="lazy"
+        />
         {/* shadow-[0px_0px_6px_1px_rgba(87,125,134,0.7)] */}
         <div className="px-10 lg:w-3/5 text-left">
           <p className="text-slate-50 mb-3 text-center text-lg">

@@ -1,6 +1,8 @@
+// React Icons
 import { Link } from "react-router-dom/cjs/react-router-dom";
+
+// Animated Background
 import FinisherBackground from "../animatedBG/FinisherBackground";
-// import { FaFileDownload } from "react-icons/fa";
 
 const Home = () => {
   return (

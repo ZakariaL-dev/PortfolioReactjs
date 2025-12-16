@@ -86,6 +86,7 @@ const FrontEndProjects = () => {
             src={f.pic}
             alt="Card image"
             className=" transition-all ease-out hover:scale-110"
+            loading="lazy"
           />
         </div>
         <div className="p-4">
@@ -175,6 +176,7 @@ const FrontEndProjects = () => {
             src={m.pic}
             alt="Card image"
             className=" transition-all ease-out hover:scale-110"
+            loading="lazy"
           />
         </div>
         <div className="p-4">
@@ -207,7 +209,6 @@ const FrontEndProjects = () => {
 
   // Games
   const Games = [
-    // games
     {
       id: 1,
       pic: "/codingscreenshots/Games-VanillaJS.svg",
@@ -254,6 +255,7 @@ const FrontEndProjects = () => {
             src={m.pic}
             alt="Card image"
             className=" transition-all ease-out hover:scale-110"
+            loading="lazy"
           />
         </div>
         <div className="p-4">

@@ -1,17 +1,18 @@
+// Components
 import BrandIdentity from "./GraphicComponents/BrandIdentity";
 import PrintAdvertising from "./GraphicComponents/PrintAdvertising";
 import Marketing from "./GraphicComponents/Marketing";
 import Publishing from "./GraphicComponents/Publishing";
 import Services from "./GraphicComponents/Services";
 
+// React Router
 import { Link } from "react-router-dom/cjs/react-router-dom";
 
+// React Icons
 import { TbArrowBigDownLines } from "react-icons/tb";
 import { MdTouchApp } from "react-icons/md";
 
 const GraphicProjetcs = () => {
-  //
-
   return (
     <div>
       <div className="w-full h-screen bg-[#9de0ce] flex flex-col justify-center items-center relative">
